@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media (max-aspect-ratio:7/10) {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    .JoinPage {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+        display: flex;
+        justify-content: center;
+        align-items: flex-start !important;
+    }
 
-.App-link {
-  color: #61dafb;
-}
+    .JoinContainer {
+        margin-top: 30vw !important;
+        width: 100% !important;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    .JoinContainer>img {
+        width: 30vw !important;
+    }
+
+    .JoinContainer>h1 {
+        font-size: 12vw !important;
+        width: 61vw !important;
+        border-bottom: 0.6vw solid white !important;
+        padding: 1vw !important;
+    }
+
+    #joinInput {
+        width: 65vw !important;
+        padding: 4vw !important;
+        font-size: 5vw !important;
+        margin: 5vw !important;
+        border-radius: 4vmax !important;
+    }
+
+    .joinbtn {
+        width: 65vw !important;
+        padding: 2vw !important;
+        font-size: 6vw !important;
+        border-radius: 4vmax !important;
+    }
+
+
+    .chatContainer {
+        background-color: white;
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+    .header {
+        height: 10% !important;
+    }
+
+    .header>h2 {
+        font-size: 5vw !important;
+        margin: 8vw !important;
+    }
+
+    .header img {
+        margin: 6vw !important;
+        transform: scale(2) !important;
+    }
+
+    .header img:hover {
+        transform: scale(3.2) !important;
+    }
+
+    .chatBox {
+        height: 80% !important;
+
+    }
+
+    .inputBox {
+
+        height: 10% !important;
+    }
+
+    #chatInput {
+        padding: 4vw !important;
+        font-size: 4vw !important;
+    }
+
+    .messageBox {
+        padding: 3vw !important;
+        margin: 2vw !important;
+        border-radius: 6vw !important;
+        font-size: 3.7vw !important;
+    }
+
+    .right {
+        float: right;
+        background-color: crimson;
+        color: white;
+    }
+
+    .left {
+        float: left;
+        background-color: #F4869C;
+    }
+
 }
