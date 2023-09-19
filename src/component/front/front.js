@@ -83,7 +83,8 @@ const Front = () => {
             navigate("/Join")
           }}>Group chat</button>
           <button className='btn' onClick={() => {
-            window.location.href = "http://localhost:5000" //anchor tag work using js
+            window.location.href = "http://localhost:8000" //anchor tag work using js
+            // window.location.href = "https://private-chat-5mll.onrender.com/" //anchor tag work using js
           }}>Find Counsellor</button>
         </div>
       </div>

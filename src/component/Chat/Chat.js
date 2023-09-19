@@ -10,7 +10,7 @@ import ReactScrollToBottom from "react-scroll-to-bottom"
 
 
 let socket;
-const ENDPOINT = "http://localhost:4500/";
+const ENDPOINT = `http://localhost:${process.env.PORT || 4500}/`;
 const Chat = () => {
 
     const [id, setid] = useState("");
@@ -62,21 +62,17 @@ const Chat = () => {
     useEffect(() => {
         socket.on('sendMessage', (data) => {
             setMessages([...messages, data]);
-            console.log(data.user, data.message, data.id);
         })
         socket.on('welcome', (data) => {
             setMessages([...messages, data]);
-            console.log(data.user, data.message);
         })
 
         socket.on('userJoined', (data) => {
             setMessages([...messages, data]);
-            console.log(data.user, data.message);
         })
 
         socket.on('leave', (data) => {
             setMessages([...messages, data]);
-            console.log(data.user, data.message);
         })
         // return () => {
         //     socket.off();
